@@ -10,9 +10,9 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, '6.1'
   spec.ios.deployment_target = '6.1'
   spec.requires_arc     = true
-  spec.source_files     = 'CardIO/*.{h,m}'
+  spec.source_files     = 'CardIOYooKassa/*.{h,m}'
   spec.frameworks       = 'Accelerate', 'AVFoundation', 'AudioToolbox', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'Security', 'UIKit'
   spec.libraries        = 'c++'
-  spec.vendored_libraries = 'CardIO/libCardIOCore.a', 'CardIO/libopencv_core.a', 'CardIO/libopencv_imgproc.a'
+  spec.vendored_libraries = 'CardIOYooKassa/libCardIOCore.a', 'CardIOYooKassa/libopencv_core.a', 'CardIOYooKassa/libopencv_imgproc.a'
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 end
